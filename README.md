@@ -1,0 +1,2 @@
+# doc230-cbio046ts-druggable-proteome
+partial: five-fold expansion claim not testable (needs structure-based pocket prediction). Annotation/sequence druggability classifier with cold-family splits; see PREREG.md, RESULTS.md, src/run.py.

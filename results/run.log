@@ -1,0 +1,119 @@
+d2 {'hgb': 0.9247, 'lr': 0.9201, 'family_prior_baseline': 0.8545}
+d3 {'hgb': 0.8783, 'lr': 0.8863, 'best': 0.8863}
+d4 {'hgb': 0.8558, 'lr': 0.849, 'best': 0.8558}
+d5/6 {'lr': 0.6285, 'hgb': 0.7577} {'keywords_only': 0.8852, 'location_only': 0.6726, 'sequence_only': 0.7577}
+{
+ "d1": {
+  "n": 20190,
+  "positives": 1633,
+  "rate": 0.081,
+  "n_families": 4136,
+  "frac_with_family": 0.715,
+  "removed_keywords": [
+   "Transferase",
+   "Hydrolase",
+   "Receptor",
+   "Transducer",
+   "Kinase",
+   "Oxidoreductase",
+   "Protease",
+   "Serine/threonine-protein kinase",
+   "Ion channel",
+   "Voltage-gated channel",
+   "Tyrosine-protein kinase",
+   "Ligand-gated ion channel"
+  ]
+ },
+ "d2_random": {
+  "hgb": 0.9247,
+  "lr": 0.9201,
+  "family_prior_baseline": 0.8545
+ },
+ "d3_cold_family": {
+  "hgb": 0.8783,
+  "lr": 0.8863,
+  "best": 0.8863
+ },
+ "d3_gate_ge_0.75": true,
+ "d4_keyword_ablated_cold_family": {
+  "hgb": 0.8558,
+  "lr": 0.849,
+  "best": 0.8558
+ },
+ "d4_gate_ge_0.70": true,
+ "d5_sequence_only_cold_family": {
+  "lr": 0.6285,
+  "hgb": 0.7577
+ },
+ "d6_groups_cold_family_hgb": {
+  "keywords_only": 0.8852,
+  "location_only": 0.6726,
+  "sequence_only": 0.7577
+ },
+ "d7_shuffle_cold_family": 0.4719,
+ "d8_per_class_auroc_cold_family": {
+  "kinase": {
+   "n": 625,
+   "pos": 277,
+   "auroc": 0.575
+  },
+  "receptor": {
+   "n": 1655,
+   "pos": 286,
+   "auroc": 0.814
+  },
+  "ion_channel": {
+   "n": 338,
+   "pos": 169,
+   "auroc": 0.67
+  },
+  "enzyme": {
+   "n": 1840,
+   "pos": 209,
+   "auroc": 0.727
+  },
+  "other": {
+   "n": 15906,
+   "pos": 802,
+   "auroc": 0.906
+  }
+ },
+ "d9_calibration_cold_family": {
+  "brier": 0.0592,
+  "brier_baseline": 0.0743,
+  "ece": 0.02
+ },
+ "d10_unlabeled_ranked": {
+  "n_unlabeled": 18557,
+  "p_gt_0_5": 212,
+  "p_gt_0_8": 12,
+  "top25": [
+   "GAPDH",
+   "ACADVL",
+   "CD36",
+   "CYBB",
+   "LBR",
+   "UQCR11",
+   "PRDX6",
+   "KCNK5",
+   "KARS1",
+   "P2RX7",
+   "P2RX1",
+   "PFKL",
+   "SCP2",
+   "GRID2",
+   "ANO1",
+   "ALOXE3",
+   "SLC6A20",
+   "PIP4K2A",
+   "HSD17B4",
+   "SLC6A19",
+   "SLC26A7",
+   "PYGB",
+   "GARS1",
+   "HBB",
+   "P2RX3"
+  ],
+  "note": "hypotheses from a label of old DrugBank binders; NOT validated druggable targets and no expansion claim"
+ }
+}
