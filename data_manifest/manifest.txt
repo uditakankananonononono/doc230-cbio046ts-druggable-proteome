@@ -1,0 +1,2 @@
+e9d0ecbc940c1ee11cf06e35ee2bdba3071b792e0a32e7664da5246204c3a313  /tmp/chk/up.tsv
+UniProt reviewed human proteome fetched 2026-10-08 via rest.uniprot.org stream (fields accession,gene_primary,length,protein_families,keyword,cc_subcellular_location,sequence). Labels: Hetionet v1.0 CbG (gene has >=1 binding compound, DrugBank-derived, 2016). Pharos TDL labels were attempted but the public GraphQL API caps pages at 10 records (~5 s each, ~3 h for the full set), so they are NOT used.
